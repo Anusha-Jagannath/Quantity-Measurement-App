@@ -3,14 +3,36 @@ package com.example.quantitymeasurementapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.fragment.app.Fragment
+import com.example.quantitymeasurementapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.fragmentButton1.setOnClickListener {
+            replaceFragment(Fragment1())
+        }
+
+        binding.fragmentButton2.setOnClickListener {
+            replaceFragment(Fragment2())
+        }
         println("App status : on create")
         Toast.makeText(this,"App status : on create",Toast.LENGTH_SHORT).show()
     }
+
+    fun replaceFragment(fragment : Fragment) {
+        val fragmentManager = supportFragmentManager
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.fragmentContainer,fragment)
+        fragmentTransaction.commit()
+    }
+
     override fun onStart() {
         super.onStart()
         println("App status : on start")
