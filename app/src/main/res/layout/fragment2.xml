@@ -3,21 +3,111 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/fragment2"
+
     >
 
 
+    <Spinner
+        android:id="@+id/spinnerFragment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/display"
+        android:layout_marginTop="41dp"
+        android:padding="20dp" />
+
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="178dp"
-        android:layout_marginTop="263dp"
-        android:layout_marginEnd="175dp"
-        android:layout_marginBottom="449dp"
-        android:text="fragment2" />
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="66dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Quantity Measurement fragment2"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="194dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/spinnerFragment1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="210dp"
+        android:background="@color/fragment1"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="172dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/editTextNumber"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="-49dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="200dp"
+        android:background="@color/fragment1"
+        android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="119dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/editTextNumber"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="-87dp"
+        android:layout_toStartOf="@id/spinner4" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="120dp"
+        android:layout_height="37dp"
+        android:layout_alignBottom="@id/editTextNumber2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="-96dp" />
+
+    <EditText
+        android:id="@+id/editTextResult"
+        android:layout_width="189dp"
+        android:layout_height="2dp"
+        android:layout_above="@+id/editTextNumber2"
+        android:layout_below="@+id/editTextNumber"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="129dp"
+        android:layout_marginBottom="-180dp"
+        android:background="@color/fragment1"
+        android:inputType="numberDecimal"/>
+
+    <Spinner
+        android:id="@+id/spinnerOutput"
+        android:layout_width="102dp"
+        android:layout_height="49dp"
+        android:layout_below="@+id/spinner3"
+        android:layout_alignBottom="@+id/editTextResult"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="309dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp" />
 
 </RelativeLayout>
