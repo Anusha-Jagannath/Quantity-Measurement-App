@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/fragment2"
    >
 
 
@@ -36,10 +37,9 @@
         android:layout_below="@+id/spinnerFragment1"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="210dp"
-        android:background="@color/fragment1"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="211dp"
         android:ems="10"
         android:inputType="numberDecimal" />
 
@@ -54,7 +54,6 @@
         android:layout_marginTop="-49dp"
         android:layout_marginEnd="10dp"
         android:layout_marginRight="200dp"
-        android:background="@color/fragment1"
         android:inputType="numberDecimal" />
 
     <Spinner
@@ -81,6 +80,15 @@
         android:layout_marginTop="300dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="-96dp" />
+    <TextView
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="220dp"
+        android:text="="
+        android:textSize="20sp"
+
+        />
 
 </RelativeLayout>
 
