@@ -109,7 +109,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 view?.findViewById<EditText>(R.id.editTextNumber2)
                                             var inputValue2 = inputView2?.text.toString().toDouble()
                                             val res = inputValue + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Grams" -> {
@@ -125,7 +125,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var first = kgToGram(inputValue)
                                             var second = kgToGram(inputValue2)
                                             var res = first + second
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Pound" -> {
@@ -142,7 +142,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 kgToPounds(inputValue) + kgToPounds(
                                                     inputValue2
                                                 )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -166,7 +166,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
 
                                             val res = inputValue + gramToKg(inputValue2)
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Grams" -> {
@@ -181,7 +181,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var first = kgToGram(inputValue)
                                             var res = first + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Pound" -> {
@@ -197,7 +197,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 kgToPounds(inputValue) + gramToPounds(
                                                     inputValue2
                                                 )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -223,7 +223,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
 
                                             val res = inputValue + poundsToKg(inputValue2)
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Grams" -> {
@@ -237,7 +237,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var first = kgToGram(inputValue)
                                             var res = first + poundsToGrams(inputValue2)
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Pound" -> {
@@ -251,7 +251,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var result =
                                                 kgToPounds(inputValue) + inputValue2
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -284,7 +284,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var inputValue2 = inputView2?.text.toString().toDouble()
 
                                             val res = gramToKg(inputValue) + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Grams" -> {
@@ -299,7 +299,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var second = kgToGram(inputValue2)
                                             var res = inputValue + second
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Pound" -> {
@@ -317,7 +317,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 gramToPounds(inputValue) + kgToPounds(
                                                     inputValue2
                                                 )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -343,7 +343,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             val res = gramToKg(inputValue) + gramToKg(
                                                 inputValue2
                                             )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Grams" -> {
@@ -356,7 +356,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var inputValue2 = inputView2?.text.toString().toDouble()
 
                                             var res = inputValue + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Pound" -> {
@@ -371,7 +371,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var result = gramToPounds(inputValue) + gramToPounds(
                                                 inputValue2
                                             )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -399,7 +399,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             val res = gramToKg(inputValue) + poundsToKg(
                                                 inputValue2
                                             )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Grams" -> {
@@ -412,7 +412,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var inputValue2 = inputView2?.text.toString().toDouble()
 
                                             var res = inputValue + poundsToGrams(inputValue2)
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Pound" -> {
@@ -426,7 +426,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var result =
                                                 gramToPounds(inputValue) + inputValue2
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -463,7 +463,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var inputValue2 = inputView2?.text.toString().toDouble()
 
                                             val res = poundsToKg(inputValue) + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Grams" -> {
@@ -478,7 +478,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var res =
                                                 poundsToGrams(inputValue) + kgToGram(inputValue2)
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Pound" -> {
@@ -495,7 +495,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 inputValue + kgToPounds(
                                                     inputValue2
                                                 )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -521,7 +521,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             val res = poundsToKg(inputValue) + gramToKg(
                                                 inputValue2
                                             )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Grams" -> {
@@ -535,7 +535,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
 
                                             var res = poundsToGrams(inputValue) + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Pound" -> {
@@ -550,7 +550,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var result = inputValue + gramToPounds(
                                                 inputValue2
                                             )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -578,7 +578,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             val res = poundsToKg(inputValue) + poundsToKg(
                                                 inputValue2
                                             )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Grams" -> {
@@ -593,7 +593,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var res = poundsToGrams(inputValue) + poundsToGrams(
                                                 inputValue2
                                             )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Pound" -> {
@@ -607,7 +607,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var result =
                                                 inputValue + inputValue2
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -666,7 +666,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var inputValue2 = inputView2?.text.toString().toDouble()
 
                                             val res = inputValue + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Gallon" -> {
@@ -682,7 +682,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var first = literToGallon(inputValue)
                                             var second = literToGallon(inputValue2)
                                             var res = first + second
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Milli liter" -> {
@@ -699,7 +699,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 literToMilliLiter(inputValue) + literToMilliLiter(
                                                     inputValue2
                                                 )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -723,7 +723,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
 
                                             val res = inputValue + gallonToLiter(inputValue2)
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Gallon" -> {
@@ -737,7 +737,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var first = literToGallon(inputValue)
                                             var res = first + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Milli Liter" -> {
@@ -753,7 +753,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 literToMilliLiter(inputValue) + gallonToMilliter(
                                                     inputValue2
                                                 )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -779,7 +779,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
 
                                             val res = inputValue + milliLiterToLiter(inputValue2)
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Gallon" -> {
@@ -793,7 +793,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var first = literToGallon(inputValue)
                                             var res = first + milliLiterToGallon(inputValue2)
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Milli liter" -> {
@@ -807,7 +807,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var result =
                                                 literToMilliLiter(inputValue) + inputValue2
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -840,7 +840,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var inputValue2 = inputView2?.text.toString().toDouble()
 
                                             val res = gallonToLiter(inputValue) + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Gallon" -> {
@@ -856,7 +856,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var second = literToGallon(inputValue2)
                                             var res = inputValue + second
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Milli liter" -> {
@@ -873,7 +873,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 gallonToMilliter(inputValue) + literToMilliLiter(
                                                     inputValue2
                                                 )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -899,7 +899,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             val res = gallonToLiter(inputValue) + gallonToLiter(
                                                 inputValue2
                                             )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Gallon" -> {
@@ -913,7 +913,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
 
                                             var res = inputValue + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Milli liter" -> {
@@ -929,7 +929,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 gallonToMilliter(inputValue) + gallonToMilliter(
                                                     inputValue2
                                                 )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -957,7 +957,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             val res = gallonToLiter(inputValue) + milliLiterToLiter(
                                                 inputValue2
                                             )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Gallon" -> {
@@ -970,7 +970,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var inputValue2 = inputView2?.text.toString().toDouble()
 
                                             var res = inputValue + milliLiterToGallon(inputValue2)
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Milli liter" -> {
@@ -984,7 +984,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var result =
                                                 gallonToMilliter(inputValue) + inputValue2
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -1021,7 +1021,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var inputValue2 = inputView2?.text.toString().toDouble()
 
                                             val res = milliLiterToLiter(inputValue) + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Gallon" -> {
@@ -1039,7 +1039,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 milliLiterToGallon(inputValue) + literToGallon(
                                                     inputValue2
                                                 )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Milli liter" -> {
@@ -1056,7 +1056,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 inputValue + literToMilliLiter(
                                                     inputValue2
                                                 )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -1082,7 +1082,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             val res = milliLiterToLiter(inputValue) + gallonToLiter(
                                                 inputValue2
                                             )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Gallon" -> {
@@ -1097,7 +1097,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
 
                                             var res = milliLiterToGallon(inputValue) + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Milli liter" -> {
@@ -1113,7 +1113,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var result = inputValue + gallonToMilliter(
                                                 inputValue2
                                             )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -1142,7 +1142,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 milliLiterToLiter(inputValue) + milliLiterToLiter(
                                                     inputValue2
                                                 )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Gallon" -> {
@@ -1158,7 +1158,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 milliLiterToGallon(inputValue) + milliLiterToGallon(
                                                     inputValue2
                                                 )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Milli liter" -> {
@@ -1173,7 +1173,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var result =
                                                 inputValue + inputValue2
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -1237,7 +1237,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
 
                                             val res = inputValue + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "killo meter" -> {
@@ -1253,7 +1253,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var first = meterToKiloMeter(inputValue)
                                             var second = meterToKiloMeter(inputValue2)
                                             var res = first + second
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "centi meter" -> {
@@ -1270,7 +1270,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 meterToCentiMeter(inputValue) + meterToCentiMeter(
                                                     inputValue2
                                                 )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -1294,7 +1294,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
 
                                             val res = inputValue + kiloMeterToMeter(inputValue2)
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "killo meter" -> {
@@ -1308,7 +1308,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var first = meterToKiloMeter(inputValue)
                                             var res = first + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "centi meter" -> {
@@ -1324,7 +1324,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 meterToCentiMeter(inputValue) + kiloMeterToCentiMeter(
                                                     inputValue2
                                                 )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -1350,7 +1350,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
 
                                             val res = inputValue + centiMeterToMeter(inputValue2)
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "killo meter" -> {
@@ -1364,7 +1364,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var first = meterToKiloMeter(inputValue)
                                             var res = first + centiMeterToKiloMeter(inputValue2)
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "centi meter" -> {
@@ -1378,7 +1378,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var result =
                                                 meterToCentiMeter(inputValue) + inputValue2
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -1411,7 +1411,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var inputValue2 = inputView2?.text.toString().toDouble()
 
                                             val res = kiloMeterToMeter(inputValue) + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "killo meter" -> {
@@ -1426,7 +1426,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var second = meterToKiloMeter(inputValue2)
                                             var res = inputValue + second
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "centi meter" -> {
@@ -1443,7 +1443,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 kiloMeterToCentiMeter(inputValue) + meterToCentiMeter(
                                                     inputValue2
                                                 )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -1470,7 +1470,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 kiloMeterToMeter(inputValue) + kiloMeterToMeter(
                                                     inputValue2
                                                 )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "killo meter" -> {
@@ -1483,7 +1483,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var inputValue2 = inputView2?.text.toString().toDouble()
 
                                             var res = inputValue + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "centi meter" -> {
@@ -1500,7 +1500,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 kiloMeterToCentiMeter(inputValue) + kiloMeterToCentiMeter(
                                                     inputValue2
                                                 )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -1529,7 +1529,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 kiloMeterToMeter(inputValue) + centiMeterToMeter(
                                                     inputValue2
                                                 )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "killo meter" -> {
@@ -1543,7 +1543,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var res =
                                                 inputValue + centiMeterToKiloMeter(inputValue2)
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "centi meter" -> {
@@ -1557,7 +1557,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var result =
                                                 kiloMeterToCentiMeter(inputValue) + inputValue2
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -1594,7 +1594,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var inputValue2 = inputView2?.text.toString().toDouble()
 
                                             val res = centiMeterToMeter(inputValue) + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "killo meter" -> {
@@ -1611,7 +1611,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 centiMeterToKiloMeter(inputValue) + meterToKiloMeter(
                                                     inputValue2
                                                 )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "centi meter" -> {
@@ -1628,7 +1628,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 inputValue + meterToCentiMeter(
                                                     inputValue2
                                                 )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -1655,7 +1655,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 centiMeterToMeter(inputValue) + kiloMeterToMeter(
                                                     inputValue2
                                                 )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "killo meter" -> {
@@ -1670,7 +1670,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var res =
                                                 centiMeterToKiloMeter(inputValue) + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "centi meter" -> {
@@ -1685,7 +1685,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var result = inputValue + kiloMeterToCentiMeter(
                                                 inputValue2
                                             )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -1714,7 +1714,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 centiMeterToMeter(inputValue) + centiMeterToMeter(
                                                     inputValue2
                                                 )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "killo meter" -> {
@@ -1731,7 +1731,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 centiMeterToKiloMeter(inputValue) + centiMeterToKiloMeter(
                                                     inputValue2
                                                 )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "centi meter" -> {
@@ -1746,7 +1746,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var result =
                                                 inputValue + inputValue2
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -1803,7 +1803,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 view?.findViewById<EditText>(R.id.editTextNumber2)
                                             var inputValue2 = inputView2?.text.toString().toDouble()
                                             val res = inputValue + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Fahrenheit" -> {
@@ -1819,7 +1819,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var first = celciusToFahrenheit(inputValue)
                                             var second = celciusToFahrenheit(inputValue2)
                                             var res = first + second
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Kelvin" -> {
@@ -1836,7 +1836,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 celciusToKelvin(inputValue) + celciusToKelvin(
                                                     inputValue2
                                                 )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -1860,7 +1860,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
 
                                             val res = inputValue + farenTocelsius(inputValue2)
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Fahrenheit" -> {
@@ -1874,7 +1874,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var first = celciusToFahrenheit(inputValue)
                                             var res = first + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Kelvin" -> {
@@ -1890,7 +1890,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 celciusToKelvin(inputValue) + farenToKelvin(
                                                     inputValue2
                                                 )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -1916,7 +1916,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
 
                                             val res = inputValue + kelvinToCelsius(inputValue2)
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Fahrenheit" -> {
@@ -1930,7 +1930,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var first = celciusToFahrenheit(inputValue)
                                             var res = first + kelvinToFeren(inputValue2)
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Kelvin" -> {
@@ -1944,7 +1944,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var result =
                                                 celciusToKelvin(inputValue) + inputValue2
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -1977,7 +1977,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var inputValue2 = inputView2?.text.toString().toDouble()
 
                                             val res = farenTocelsius(inputValue) + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Fahrenheit" -> {
@@ -1992,7 +1992,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var second = celciusToFahrenheit(inputValue2)
                                             var res = inputValue + second
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Kelvin" -> {
@@ -2009,7 +2009,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 farenToKelvin(inputValue) + celciusToKelvin(
                                                     inputValue2
                                                 )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -2035,7 +2035,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             val res = farenTocelsius(inputValue) + farenTocelsius(
                                                 inputValue2
                                             )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Fahrenheit" -> {
@@ -2048,7 +2048,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var inputValue2 = inputView2?.text.toString().toDouble()
 
                                             var res = inputValue + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Kelvin" -> {
@@ -2063,7 +2063,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var result = farenToKelvin(inputValue) + farenToKelvin(
                                                 inputValue2
                                             )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -2091,7 +2091,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             val res = farenTocelsius(inputValue) + kelvinToCelsius(
                                                 inputValue2
                                             )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Fahrenheit" -> {
@@ -2104,7 +2104,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var inputValue2 = inputView2?.text.toString().toDouble()
 
                                             var res = inputValue + kelvinToFeren(inputValue2)
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Kelvin" -> {
@@ -2118,7 +2118,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var result =
                                                 farenToKelvin(inputValue) + inputValue2
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -2155,7 +2155,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var inputValue2 = inputView2?.text.toString().toDouble()
 
                                             val res = kelvinToCelsius(inputValue) + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Fahrenheit" -> {
@@ -2172,7 +2172,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 kelvinToFeren(inputValue) + celciusToFahrenheit(
                                                     inputValue2
                                                 )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Kelvin" -> {
@@ -2189,7 +2189,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                                 inputValue + celciusToKelvin(
                                                     inputValue2
                                                 )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -2215,7 +2215,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             val res = kelvinToCelsius(inputValue) + farenTocelsius(
                                                 inputValue2
                                             )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Fahrenheit" -> {
@@ -2228,7 +2228,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var inputValue2 = inputView2?.text.toString().toDouble()
 
                                             var res = kelvinToFeren(inputValue) + inputValue2
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Kelvin" -> {
@@ -2244,7 +2244,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var result = inputValue + farenToKelvin(
                                                 inputValue2
                                             )
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }
@@ -2272,7 +2272,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             val res = kelvinToCelsius(inputValue) + kelvinToCelsius(
                                                 inputValue2
                                             )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Fahrenheit" -> {
@@ -2288,7 +2288,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
                                             var res = kelvinToFeren(inputValue) + kelvinToFeren(
                                                 inputValue2
                                             )
-                                            output.setText(res.toString())
+                                            output.setText("Result= ${res.toString()}")
                                         }
 
                                         "Kelvin" -> {
@@ -2303,7 +2303,7 @@ class Fragment2 : Fragment(), AdapterView.OnItemSelectedListener {
 
                                             var result =
                                                 inputValue + inputValue2
-                                            output.setText(result.toString())
+                                            output.setText("Result= ${result.toString()}")
                                         }
 
                                     }

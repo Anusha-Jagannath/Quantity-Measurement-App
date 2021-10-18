@@ -11,4 +11,5 @@
     <color name="fragment4">#03A9F4</color>
     <color name="fragment1">#12EDD9</color>
     <color name="fragment2">#EC8079</color>
+    <color name="spinnerColor">#FFC107</color>
 </resources>
