@@ -1,5 +1,6 @@
 package com.example.quantitymeasurementapp
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -20,10 +21,14 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.fragmentButton1.setOnClickListener {
+            binding.fragmentButton1.setBackgroundColor(Color.RED)
+            binding.fragmentButton2.setBackgroundColor(Color.BLACK)
             replaceFragment(Fragment1())
         }
 
         binding.fragmentButton2.setOnClickListener {
+            binding.fragmentButton1.setBackgroundColor(Color.BLACK)
+            binding.fragmentButton2.setBackgroundColor(Color.RED)
             replaceFragment(Fragment2())
         }
         Log.d("MainActivity", "App status : on create")
@@ -34,6 +39,7 @@ class MainActivity : AppCompatActivity() {
      * @param fragment
      */
     fun replaceFragment(fragment: Fragment) {
+
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.fragmentContainer, fragment)
