@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        
         binding.fragmentButton1.setOnClickListener {
             binding.fragmentButton1.setBackgroundColor(Color.RED)
             binding.fragmentButton2.setBackgroundColor(Color.BLACK)

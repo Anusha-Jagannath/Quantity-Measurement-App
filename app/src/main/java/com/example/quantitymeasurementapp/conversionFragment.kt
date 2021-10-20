@@ -56,11 +56,11 @@ class Fragment1 : Fragment(), AdapterView.OnItemSelectedListener {
             return
         }
         if (text.toString() != "") {
-            when (spin?.selectedItemPosition) {
-                0 -> convertTemp(view, text.toString())
-                1 -> convertDistance(view, text.toString())
-                2 -> convertMass(view, text.toString())
-                3 -> convertVolume(view, text.toString())
+            when (spin?.selectedItem) {
+                "Temperature" -> convertTemp(view, text.toString())
+                "Distance" -> convertDistance(view, text.toString())
+                "Mass" -> convertMass(view, text.toString())
+                "Volume" -> convertVolume(view, text.toString())
             }
         }
 
@@ -73,21 +73,21 @@ class Fragment1 : Fragment(), AdapterView.OnItemSelectedListener {
      */
     private fun convertMass(view: View?, weight: String) {
         if (weight != "") {
-            var tempspin: Int =
-                view?.findViewById<Spinner>(R.id.spinner3)?.selectedItemPosition as Int
+            var tempspin: String =
+                view?.findViewById<Spinner>(R.id.spinner3)?.selectedItem as String
             val output = view?.findViewById<EditText>(R.id.editTextNumber2)
             when (tempspin) {
-                0 -> {
+                "KG" -> {
                     if (view != null) {
-                        when (view.findViewById<Spinner>(R.id.spinner4).selectedItemPosition) {
-                            0 -> {
+                        when (view.findViewById<Spinner>(R.id.spinner4).selectedItem) {
+                            "KG" -> {
                                 output.setText(weight)
                             }
-                            1 -> {
+                             "Grams"-> {
                                 val res = weight.toDouble() * 1000
                                 output.setText(res.toString())
                             }
-                            2 -> {
+                            "Pound" -> {
                                 val res = weight.toDouble() * 2.205
                                 output.setText(res.toString())
                             }
@@ -95,17 +95,17 @@ class Fragment1 : Fragment(), AdapterView.OnItemSelectedListener {
                         }
                     }
                 }
-                1 -> {
+                "Grams" -> {
                     if (view != null) {
-                        when (view.findViewById<Spinner>(R.id.spinner4).selectedItemPosition) {
-                            1 -> {
+                        when (view.findViewById<Spinner>(R.id.spinner4).selectedItem) {
+                            "Grams" -> {
                                 output.setText(weight)
                             }
-                            0 -> {
+                            "KG" -> {
                                 val res = weight.toDouble() / 1000
                                 output.setText(res.toString())
                             }
-                            2 -> {
+                            "Pound" -> {
                                 val res = weight.toDouble() / 454
                                 output.setText(res.toString())
                             }
@@ -113,17 +113,17 @@ class Fragment1 : Fragment(), AdapterView.OnItemSelectedListener {
                         }
                     }
                 }
-                2 -> {
+                "Pound" -> {
                     if (view != null) {
-                        when (view.findViewById<Spinner>(R.id.spinner4).selectedItemPosition) {
-                            2 -> {
+                        when (view.findViewById<Spinner>(R.id.spinner4).selectedItem) {
+                            "Pound" -> {
                                 output?.setText(weight)
                             }
-                            0 -> {
+                            "KG" -> {
                                 val res = weight.toDouble() / 2.205
                                 output.setText(res.toString())
                             }
-                            1 -> {
+                            "Grams" -> {
                                 val res = weight.toDouble() * 454
                                 output.setText(res.toString())
                             }
